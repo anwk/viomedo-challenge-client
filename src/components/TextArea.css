@@ -1,0 +1,37 @@
+.vm-text-area-wrapper {
+    margin-top: 2px;
+}
+
+.vm-text-area {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 80px;
+    padding: 6px 12px;
+    border: 1px solid var(--input-border-color);
+    line-height: 1.45;
+    display: block;
+    transition-property: border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.vm-text-area-label {
+    font-weight: 500;
+}
+
+.vm-text-area:focus {
+    outline: none !important;
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.vm-text-area.error {
+    outline: none !important;
+    border-color: var(--error-color);
+}
+
+.vm-text-error-msg {
+    color: var(--error-color);
+    font-weight: 400;
+    font-size: var(--input-error-font-size);
+}

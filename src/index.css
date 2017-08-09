@@ -1,5 +1,47 @@
+:root {
+  --input-border-color: #0E522A;
+  --input-error-font-size: 14px;
+  --input-backgound-color: #DFDFDF;
+  --input-focus-border-color: #69C17E;
+  --error-color: #CF0615;
+  --shadow-color: #719ECE;
+  --button-color: #EA5CA1;
+  --button-hover-color: #ff64b9;
+  --button-text-color: #DFDFDF;
+  --font-color: #838383;
+  --button-border: #DD1C7A;
+  --header-background: #19934C;
+  --footer-background: #DDE4EB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  color: var(--font-color);
+  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.clear-fix:before,
+.clear-fix:after {
+  content: "";
+  display: table;
+}
+.clear-fix:after {
+  clear: both;
+}
+.clear-fix {
+  *zoom: 1;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,0 +1,23 @@
+.vm-button {
+    background: var(--button-color);
+    color: var(--button-text-color);
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: 600;
+    width: 140px;
+    height: 48px;
+    margin: 10px 0;
+    border: 2px solid var(--button-border);
+    transition-property: opacity, background;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.vm-button:disabled {
+    opacity: 0.6;
+}
+
+.vm-button:enabled:hover {
+    cursor: pointer;
+    background: var(--button-hover-color);
+}

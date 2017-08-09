@@ -1,0 +1,38 @@
+.vm-input-wrapper {
+    margin: 4px 0;
+}
+
+.vm-input {
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    border: 1px solid var(--input-border-color);
+    line-height: 1.45;
+    display: block;
+    transition-property: border-color;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+}
+
+.vm-input-label {
+    font-weight: 500;
+}
+
+.vm-input:focus {
+    outline: none !important;
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 10px var(--input-focus-border-color);
+}
+
+.vm-input.error {
+    outline: none !important;
+    border-color: var(--error-color);
+}
+
+.vm-error-msg {
+    animation: fadeOut 1s linear;
+    text-align: right;
+    font-weight: 400;
+    color: var(--error-color);
+    font-size: var(--input-error-font-size);
+}
