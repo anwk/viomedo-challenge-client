@@ -27,6 +27,10 @@ class App extends Component {
       this.setState({
         message: !errors ? successMessage(id) : errorMessage(),
       });
+    }).catch(() => {
+      this.setState({
+        message: 'Ooops... Unexpected server error...',
+      });
     })
   }
 
